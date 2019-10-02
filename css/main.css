@@ -571,6 +571,7 @@ a {
   top: 35%;
   margin-top: -0.5px;
   background: #333333;
+  z-index: -1;
 }
 
 .end span:before, .folio span:before {
