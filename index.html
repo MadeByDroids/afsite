@@ -1,145 +1,274 @@
 <!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Prata|Roboto:400,700&display=swap" rel="stylesheet"></head>
-
+<html>
+	<head>
+    <title>Andrew Fiddy - DESIGNER</title>
+    <meta name="description" content="">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:ital,wght@0,100&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/barebones.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+	</head>
 <body>
 
-<div id="splash">
+  <div class="topbar fadeInTop" >
+    <p><a id="af-logo" href="" class="logo glitch"><img src="./src/img/af-ico.svg" alt="Andrew Fiddy : Designer"></a></p> 
+    <p>Andrew Fiddy <span class="highlight"> DESIGNER</span></p>
+    <div class="btncontainer"><a href="mailto:andy@oakencreative.co.uk" class="button glitch" >Say hello</a></div>
+  </div>
 
-    <div class="overlay">
-        <p class="glyph">- af -</p>
-        <div class="overlay-content">
-          <h1 class="hero-heading">Andrew Fiddy</h1>
-          <h2 class="expertise"><span
-     class="txt-rotate"
-     data-period="6000"
-     data-rotate='[ "Branding", "Design", "Creative Direction", "User Experience", "Illustration", "Web Design" ]'></span></h2>
-        </div>
-      </div>
+  <div class="video_contain">
+  <video id="myVideo" autoplay muted loop playsinline>
+    <source src="./src/img/multigen.mp4" type="video/mp4">
+    <source src="./src/img/multigen.webm" type="video/webm">
+  </video>
+  </div>
 
-        <div class="container">
-      <div class="box">
-        <div class="spin-container">
-          <div class="shape">
-            <div class="bd"></div>
+  <div class="section splashvid introvid">
+    <div class="video-header">
+      <div class="video-cover-x"><img src="./src/img/af-ico.svg"></div>
+      <div class="viewport-header">
+        <div class="vtext">
+          <h1 class="dt">AndrewFiddy</h1>  
+          <h1 class="mob">Andrew Fiddy</h1>
+          <h2 class="subhead white">Multi dimensional designer</h2>
+          <a class="down scroll pulse" href="#aftop"><img src="./src/img/down.svg" class="glitch" alt="scroll down" id="top"></a> 
           </div>
-         </div>
-      </div>
-    </div>
-
-</div>
-
-<div class="section centerit">
-  <div class="row">
-    <div class="flex-item">
-      <img src="img/af-img.png" width="100" alt="Yours truly...">
-    </div>
-    <div class="flex-item">
-      <p class="justify centertext">Hello, <br>I'm Andy, a highly experienced and versatile Designer based in the UK.</p>
-      <p class="justify centertext">Having worked with global agencies, teams and clients for the last 12 years I provide expertise in <b>User Experience Design</b>, <b>User Interface Design</b>, <b>Branding</b>, <b>Visual Identity</b>, <b>Creative Direction</b>, <b>Team management</b> and <b>Mentoring</b>.</p>
-      <p class="justify centertext">Clients have included BMW, MSC, Eurotunnel, Save The Children, CAFOD, Deloitte and many more.</p>
-      <p class="justify centertext"><a href="mailto:andy@oakencreative.co.uk">Portfolio available on request</a>.</p></div>
-  </div>
-</div>
-
-<div class="section centerit">
-    <div class="row">
-      <div class="flex-item">
-        <h2 class="expertise">Folio</h2>
-      </div>
-        <div class="flex-item nowidth">
-          <ul>
-            <li>Branding</li>
-            <li>UX</li>
-            <li>Design</li>
-            <li>Creative Direction</li>
-            <li>Interaction</li>
-            <li>Illustration</li>
-          </ul>
         </div>
+      </div>
+    </div>
+
+<div class="section"  id="aftop">
+    <div class="grid-container halves">
+      <div class="scaleIn intro"><img src="./src/img/af.jpeg"  class='glitch2' alt="af"></div>
+      <div class="from-right"><h3>Hello, I'm Andy,<br> a versatile & highly skilled Designer.</h3>
+        <p class="from-right">Originally from New Zealand, I have over 20 years industry experience in the UK across a wide range of areas. Most recently this has included the XR realm, utilising creative technology for VR, AR, AI, games and mixed reality. 
+        Currently I am Head of Design @ <a href="http://www.infiniteform.io" target="_blank">InfiniteForm</a> in Norwich UK</p></div> 
+    </div>
+  </div>
+
+  <div class="section" id="clients">
+    <div class="grid-container fadeIn scaleIn ">
+          <p class="center">I’ve worked in cutting edge agencies globally; as part of a team managing design systems, creative output and delivery.<br>I'm happy to get my hands stuck into a project at any level. The more exciting the better!</p>
+
+      <h2 class="subhead">The many brands I have collaborated with include:</h2>
+      </div>
+      <div id="scrollcontainer">
+      <ul class="photobanner fadeIn">
+        <li><img src="./src/img/logo-assets/deloitte_logo_white.svg" alt=""></li>
+        <li><img src="./src/img/logo-assets/haagen_dazs_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/HET_testimony_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/mastercard_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/microsoft_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/reloop_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/sainsbury_centre_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/UEA_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/visa_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/yamaha_logo_white.svg" alt=""></li>
+            <li><img src="./src/img/logo-assets/deloitte_logo_white.svg" alt=""></li>
+        <li><img src="./src/img/logo-assets/haagen_dazs_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/HET_testimony_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/mastercard_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/microsoft_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/reloop_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/sainsbury_centre_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/UEA_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/visa_logo_white.svg" alt=""></li>
+       <li><img src="./src/img/logo-assets/yamaha_logo_white.svg" alt=""></li>
+
+        <!-- <li>Porsche</li>
+        <li>BMW</li>
+        <li>Games Workshop</li>
+        <li>MSC</li>
+        <li>Berry</li>
+-->
+      </ul>
+    </div>
+    <!--<div class="grid-container fadeIn scaleIn ">
+    <p class="center">I’ve worked in cutting edge agencies globally; as part of a team managing design systems, creative output and delivery. I'm happy to get my hands stuck into a project at any level. The more exciting the better!</p>
+  </div>!-->
+</div>
+
+<div class="section">
+
+  <div class="grid-container">
+    <div class="fadeIn scaleIn">
+      <h2 class="subhead fadeIn scaleIn">At heart I'm a creative, technologist, planner, maker, gamer…<br>focused on delivering world class products..</h2>
+
+      <h4>Tools & Methods I currently use</h4>
+      <ul class="tools">
+        <li class="fadeIn scaleIn ">Hand drawn sketching, prototyping, wireframing</li>
+        <li class="fadeIn scaleIn ">The full Adobe Creative Suite</li>
+        <li class="fadeIn scaleIn ">Html, CSS & Javascript libraries</li>
+        <li class="fadeIn scaleIn ">After Effects & Premiere for VFX, animation & editing</li>
+        <li class="fadeIn scaleIn ">XD / Figma for UI & Interactions.</li>
+        <li class="fadeIn scaleIn ">Basic working knowledge of the Unity 3D production pipeline & techniques</li>
+        <li class="fadeIn scaleIn ">Experience using AR & VR mockup tools; ShapesXR, Bezel</li>
+        <li class="fadeIn scaleIn ">AI systems as part of the creative process; Runway, NanoBanana, ComfyUi </li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="end">
-  <div class="row">
-    <ul class="contact">
-      <li><span><a href="http://www.linkedin.com/in/andrew-fiddy-48200436" target="_blank">linkedIn</a></span></li>
-      <li><span><a href="https://www.instagram.com/fiddmeister/" target="_blank">Instagram</a></span></li>
-      <li><span><a href="mailto:andy@oakencreative.co.uk">Mail</a></span></li>
-    </ul>
+  <div class="section" id="folio">
+  <div class="grid-container">
+    <div class="fadeIn scaleIn">
+      <h2 class="subhead fadeIn scaleIn">A snapshot...</h2>
+          <p class="center fadeIn scaleIn">Your time is important, so here's a quick taste of some projects I've been involed in, usually as part of wider team responsible for all design elements. </p>
+
+      <!--<h4>examples</h4>!-->
+
+
+       </div>
+         </div>
+
+<div class="folioimg mob">
+  <div class="fadeIn scaleIn">
+    <img src="./src/img/folio-snaps/IMG_6981-scaled-952x615-f50_50.jpg" alt="" />    
   </div>
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/cayman-islands-ar-app-10-764x520-f50_50.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/fins.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+      <img src="./src/img/folio-snaps/haagen-dazs-web-ar-08-952x615-f50_50.jpg" alt="" />    
+    </div>
+    <div class="fadeIn scaleIn">
+      <img src="./src/img/folio-snaps/IMG_4597-scaled.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+      <img src="./src/img/folio-snaps/reach-plc-time-vault-09-952x615-f50_50.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/roarr-dinosaur-park-03-952x615-f50_50.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/east-suffolk-council-lowestoft-ness-14-764x520-f50_50.jpg" alt="" />
+    </div>
+
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/sainsbury-centre-ar-app-16-952x615-f50_50.jpg" alt="" />
+    </div>
+    <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps//amcor-interactive-table-01-952x615-f50_50.jpg" alt="" />
+    </div>
+
+      <div class="fadeIn scaleIn">
+     <img src="./src/img/folio-snaps/yamaha-clavinova-space-ar-app-14-764x520-f50_50.jpg" alt="" />
+    </div>
 </div>
 
+<div class="menu dt">
+  <div class="menu--wrapper">
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/IMG_6981-scaled-952x615-f50_50.jpg" alt="" /></figure>    
+    </div>
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/cayman-islands-ar-app-10-764x520-f50_50.jpg" alt="" /></figure>
+    </div>
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/fins.jpg" alt="" /></figure>
+    </div>
+
+    <div class="menu--item">
+      <figure>
+        <video id="menu--item-img" autoplay muted loop playsinline>
+        <source src="./src/img/folio-snaps/extended-sml-IF.mp4" type="video/mp4">
+       <source src="./src/img/multigen.webm" type="video/webm">
+  </video>
+      </figure>
+    </div>
+
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/haagen-dazs-web-ar-08-952x615-f50_50.jpg" alt="" /></figure>    
+    </div>
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/IMG_4597-scaled.jpg" alt="" /></figure>
+    </div>
+          <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/reach-plc-time-vault-09-952x615-f50_50.jpg" alt="" /></figure>
+    </div>
 
 
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/roarr-dinosaur-park-03-952x615-f50_50.jpg" alt="" /></figure>
+    </div>
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/east-suffolk-council-lowestoft-ness-14-764x520-f50_50.jpg" alt="" /></figure>    
+    </div>
+
+
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/sainsbury-centre-ar-app-16-952x615-f50_50.jpg" alt="" /></figure>
+    </div>
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/amcor-interactive-table-01-952x615-f50_50.jpg" alt="" /></figure>
+    </div>
+          <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/wotw-ui-conceptsInteractions.jpg" alt="" /></figure>
+    </div>
+
+        <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/UX-wires-RWE.png" alt="" /></figure>
+    </div>
+
+      <div class="menu--item">
+      <figure>
+        <video id="menu--item-img" autoplay muted loop playsinline>
+        <source src="./src/img/folio-snaps/monstermash_1.mp4" type="video/mp4">
+       <source src="./src/img/multigen.webm" type="video/webm">
+  </video>
+      </figure>
+    </div>
+
+     <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/berry-design-language.png" alt="" /></figure>
+    </div>
+
+      <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/yamaha-clavinova-space-ar-app-14-764x520-f50_50.jpg" alt="" /></figure>
+    </div>
+
+     <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/User journey - yamaha.png" alt="" /></figure>
+    </div>
+
+    <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/east-suffolk-council-lowestoft-ness-15-764x520-f50_50.jpg" alt="" /></figure>
+    </div>
+
+      <div class="menu--item">
+      <figure><img src="./src/img/folio-snaps/xist-installation-front.png" alt="" /></figure>
+    </div>
+
+
+  </div>
+  </div>
+</div>
+</div>
+
+    <div class="section">          
+<div class="grid-container footer">
+  <h2 class="subhead fadeIn scaleIn quote">To discuss or arrange a full portfolio viewing contact me below.</p>
+        <h2 class="fadeIn scaleIn big">+44 (0)7919 116742<br>
+          <a class="fadeIn scaleIn big" href="mailto:andy@oakencreative.co.uk">andy@oakencreative.co.uk</a></h2>
+            <img src="./src/img/af-ico.svg" alt="afsytems" class="fadeIn scaleIn" class='glitch2'>
+</div>
+</div>
 
 </body>
-
-<script type="text/javascript">
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 4000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 200 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 100;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 1px solid #333 }";
-  document.body.appendChild(css);
-};
-</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+<script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+<script src="./src/js/app.js"></script>
 </html>
