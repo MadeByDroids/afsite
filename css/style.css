@@ -438,7 +438,7 @@ h2 { font-size: 3rem; }
     height: 40vw;
   }
 }
-.menu--item:nth-child(n+15):before {
+.menu--item:nth-child(n+20):before {
   content: counter(count);
 }
 .menu--item figure {
