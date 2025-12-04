@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="en">
 	<head>
-    <title>Andrew Fiddy</title>
+    <title>Andrew Fiddy | Head of Design | Creative Director</title>
     <meta name="description" content="Website of Creative Senior Designer Andrew Fiddy">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:ital,wght@0,100&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/barebones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/barebones.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -16,9 +15,10 @@
 	</head>
 <body>
 
+  <div class="ball"></div>
+
   <div class="topbar fadeInTop" >
-    <p><a id="af-logo" href="" class="logo glitch"><img src="img/af-ico.svg" alt="Andrew Fiddy : Designer"></a></p> 
-    <p>Andrew Fiddy <span class="highlight"> DESIGNER</span></p>
+    <p><a id="af-logo" href="#aftop" class="logo glitch"><p class="dt">Andrew Fiddy<br><span class="highlight designer">Designer</span></p></a></p>  
     <div class="btncontainer"><a href="mailto:andy@oakencreative.co.uk" class="button glitch" >Say hello</a></div>
   </div>
 
@@ -34,29 +34,52 @@
       <div class="video-cover-x"><img src="img/af-ico.svg" alt="af-icon"></div>
       <div class="viewport-header">
         <div class="vtext">
-          <h1 class="dt">AndrewFiddy</h1>  
+          <h1 class="dt" data-split-el="true">AndrewFiddy</h1>  
           <h1 class="mob">Andrew<br>Fiddy</h1>
-          <h2 class="subhead white">Multi dimensional designer</h2>
+          <h2 class="typer"><span id="element"></span></h2>
+          <p class="typer designer">Designer</p>
           <a class="down scroll pulse" href="#aftop"><img src="img/down.svg" class="glitch" alt="scroll down" id="top"></a> 
           </div>
         </div>
       </div>
     </div>
 
-<div class="section"  id="aftop">
-    <div class="grid-container halves">
-      <div class="scaleIn intro"><img src="img/af.jpeg"  class='glitch2' alt="af"></div>
-      <div class="from-right"><h3>Hello, I'm Andy,<br> a versatile & highly skilled Designer.</h3>
-        <p class="from-right">Originally from New Zealand, I have over 20 years industry experience in the UK across a wide range of areas. Most recently this has included the XR realm, utilising creative technology for VR, AR, AI, games and mixed reality. 
-        Currently I am Head of Design @ <a href="http://www.infiniteform.io" target="_blank">InfiniteForm</a> in Norwich UK</p></div> 
+<div class="section" id="aftop">
+    <div class="grid-container halves from-right">
+      <div class=""><h3 class="intro fadeIn scaleIn">Hello, I'm Andy,<br> a versatile & highly skilled Designer.</h3>
+        <p class="fadeIn scaleIn">Leader, Creator, Coder, Innovator, I have over 20 years industry experience designing at the highest level for numerous products. Most recently this has included the XR realm, utilising creative technology for VR, AR, AI, games and mixed reality. 
+        Currently I am Head of Design @ <a href="http://www.infiniteform.io" target="_blank">InfiniteForm</a> in Norwich UK</p></div>
+      <div class="from-base introtext"><img src="img/af-y.jpg"  class='glitch2 round' id="portrait" alt="af"></div> 
     </div>
   </div>
 
-  <div class="section" id="clients">
-    <div class="grid-container fadeIn scaleIn ">
-          <p class="center dt">I’ve worked in cutting edge agencies globally; as part of a team managing design systems, creative output and delivery.<br>I'm happy to get my hands stuck into a project at any level. The more exciting the better!</p>
 
-      <h2 class="subhead">The many brands I have collaborated with include:</h2>
+<div class="section showreel dt">
+  <div class="grid-container">
+   <h2 class="subhead  fadeIn scaleIn">Showreel</h2>
+    <div class="showreel-container">
+      <a class="button" id="myBtn">Launch Showreel</a>
+        <video id="showreel-holder" class="fadeIn scaleIn" autoplay muted loop playsinline>
+          <source src="img/holder.mp4" type="video/mp4">
+          <source src="img/holder.webm" type="video/webm">
+        </video>
+    </div>
+    </div>
+  </div>
+
+<div id="myModal" class="modal dt">
+  <div class="modal-content">
+  <span class="close"> 
+    <ul class="contactbanner"><li><a class="glitch"><img src="img/circle-x.svg" alt="email"></a></li></ul>
+  </span>
+  <div id="viddesktop"></div>
+  </div>
+</div>
+
+  
+<div class="section" id="clients">
+    <div class="grid-container fadeIn scaleIn ">
+      <h3 class="subhead center">The many brands I have collaborated with include:</h2>
       </div>
       <div id="scrollcontainer">
       <ul class="photobanner fadeIn">
@@ -84,37 +107,11 @@
     </div>
 </div>
 
-<div class="section">
+<div class="section" id="folio">
   <div class="grid-container">
     <div class="fadeIn scaleIn">
-      <h2 class="subhead fadeIn scaleIn">At heart I'm a creative, technologist, planner, maker, gamer…<br>focused on delivering world class products..</h2>
-      <h4>What I can offer</h4>
-      <ul class="tools">
-        <li class="fadeIn scaleIn ">Design & product expertise.</li>
-        <li class="fadeIn scaleIn ">Team and mentor development.</li>
-        <li class="fadeIn scaleIn ">Creative leadership at all levels.</li>
-        <li class="fadeIn scaleIn ">Fully conversant in resposive web and design systems.</li>
-        <li class="fadeIn scaleIn ">Experience of the 3D production pipeline & techniques.</li>
-        <li class="fadeIn scaleIn ">Immersive experience with AR, VR, Ai, XR.</li>
-      </ul>
-
-      <h4>Technical skills</h4>
-      <ul class="tools">
-        <li class="fadeIn scaleIn ">Hand drawn sketching, prototyping & wireframing.</li>
-        <li class="fadeIn scaleIn ">Figma UX / UI / Interactions.</li>
-        <li class="fadeIn scaleIn ">The full Adobe Creative Suite.</li>
-        <li class="fadeIn scaleIn ">After Effects & Premiere / Motion graphics & animation.</li>
-        <li class="fadeIn scaleIn ">HTML, CSS & Javascript libraries.</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-  <div class="section" id="folio">
-  <div class="grid-container">
-    <div class="fadeIn scaleIn">
-      <h2 class="subhead fadeIn scaleIn">A snapshot...</h2>
-          <p class="center fadeIn scaleIn">Here's a quick taste of some projects I've been involed in, primarily as Lead Designer in part of a wider team.</p>
+      <h2 class="subhead fadeIn scaleIn">Case Studies</h2>
+      <p class="center margin-top">Full case studies coming soon</p>
        </div>
     </div>
 
@@ -160,7 +157,6 @@
     <img src="img/folio-snaps/xist-installation-front.png" alt="Lowestoft Ness Augmented Reality trail" />
     </div>
 </div>
-
 
 <!-- desktop slider -->
 <div class="menu dt">
@@ -243,19 +239,105 @@
   </div>
 </div>
 
-    <div class="section">          
+<div class="section" id="skills">
+  <div class="grid-container fadeIn scaleIn ">
+      <h3 class="subhead fadeIn scaleIn center">At heart I'm a creative, technologist, planner, maker, gamer… focused on delivering world class products..</h2>
+  </div>
+  <div class="grid-container halves">
+    <div class="fadeIn scaleIn">
+      <h4 class="left">What I can offer</h4>
+      <ul class="tools">
+        <li class="fadeIn scaleIn ">Design & product expertise.</li>
+        <li class="fadeIn scaleIn ">Team and mentor development.</li>
+        <li class="fadeIn scaleIn ">Creative leadership at all levels.</li>
+        <li class="fadeIn scaleIn ">Fully conversant in resposive web and design systems.</li>
+        <li class="fadeIn scaleIn ">Experience of the 3D production pipeline & techniques.</li>
+        <li class="fadeIn scaleIn ">Immersive experience with AR, VR, Ai, XR.</li>
+      </ul>
+</div>
+
+<div class="fadeIn scaleIn">
+      <h4 class="left">Technical skills</h4>
+      <ul class="tools">
+        <li class="fadeIn scaleIn ">Hand drawn sketching, prototyping & wireframing.</li>
+        <li class="fadeIn scaleIn ">Figma UX / UI / Interactions.</li>
+        <li class="fadeIn scaleIn ">The full Adobe Creative Suite.</li>
+        <li class="fadeIn scaleIn ">After Effects & Premiere / Motion graphics & animation.</li>
+        <li class="fadeIn scaleIn ">HTML, CSS & Javascript libraries.</li>
+      </ul></div>
+
+    </div>
+  </div>
+
+<div class="section" id="contact-d">          
 <div class="grid-container footer">
-  <h2 class="subhead fadeIn scaleIn quote">To discuss or arrange a full portfolio viewing contact me below.</p>
-          <a class="fadeIn scaleIn big" href="mailto:andy@oakencreative.co.uk">andy@oakencreative.co.uk</a></h2>
-            <img src="img/af-ico.svg" alt="afsytems" class="fadeIn scaleIn" class='glitch2'>
+  <p class="fadeIn scaleIn quote">To discuss or arrange a full portfolio viewing contact me below.</p>
+  <h2 class="big"><a href="mailto:andy@oakencreative.co.uk">andy@oakencreative.co.uk</a></h2>
+  <div id="contactcontainer">
+  <ul class="contactbanner">
+    <li><a href="mailto:andy@oakencreative.co.uk" class="glitch"><img src="img/send-horizontal.svg" alt="email"></a></li>
+    <li><a href="https://www.instagram.com/oakencreative/" target="_blank" class="glitch"><img src="img/instagram.svg" alt="instagram"></a></li>
+    <li><a href="http://www.linkedin.com/in/andrew-fiddy-48200436" target="_blank" class="glitch"><img src="img/linkedin.svg" alt="linkedin"></a></li>
+  </ul>
 </div>
 </div>
+</div>
+
+</div>
+  </div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
 <script src="js/app.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Multi dimensional', 'Product Lead', 'Branding', 'Ux and Ui', 'Game and Interaction', 'Prototype', 'Creative', 'Team leading'],
+      typeSpeed: 70,
+      loop: true,
+    });
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+    document.getElementById("viddesktop").innerHTML = `
+         <video id="showreel-vid" class="fadeIn scaleIn myShowreel" controls autoplay loop muted>
+          <source src="img/video-folio/vim1080.mp4" type="video/mp4">
+          <source src="img/holder.webm" type="video/webm">
+        </video>
+    `;
+}
+
+var vid = document.getElementById("showreel-vid"); 
+
+function playVid() { 
+vid.play(); 
+} 
+
+function pauseVid() { 
+vid.pause(); 
+}
+
+span.onclick = function() {
+  gsap.to ("#myModal", {  opacity:0, duration: 0.5,  onComplete: () => {
+  modal.style.display = "none";
+  pauseVid();
+  }});  
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+  gsap.to ("#myModal", {  opacity:0, duration: 0.5,  onComplete: () => {
+  modal.style.display = "none";
+  pauseVid();
+  }});  
+  }
+}
+
+
+
+
+  </script>
 </html>
