@@ -21,7 +21,7 @@ const leftItem = gsap.utils.toArray('.from-left');
             trigger: rightyItem,
             animation: anim,
             start: 'top 80%',
-              end: 'top 20%',
+              end: 'top 40%',
             markers: false,
               scrub: true });
 
@@ -29,7 +29,7 @@ const leftItem = gsap.utils.toArray('.from-left');
 
 const fadeIn = gsap.utils.toArray('.fadeIn');
         fadeIn.forEach((fadeItem, i) => {
-          const anim = gsap.fromTo(fadeItem, {autoAlpha: 0 }, { duration: 1, autoAlpha: 1});
+          const anim = gsap.fromTo(fadeItem, {autoAlpha: 0 }, { duration: 1, autoAlpha: 1, delay:0.25});
           ScrollTrigger.create({
             trigger: fadeItem,
             animation: anim,
@@ -42,7 +42,7 @@ const fadeIn = gsap.utils.toArray('.fadeIn');
 
 const scaleIn = gsap.utils.toArray('.scaleIn');
         scaleIn.forEach((scaleItemIn, i) => {
-          const anim = gsap.fromTo(scaleItemIn, {scale:0.5, autoAlpha: 0 }, { duration: 2, scale:1, autoAlpha: 1});
+          const anim = gsap.fromTo(scaleItemIn, {scale:0.5, autoAlpha: 0 }, { duration: 4, scale:1, autoAlpha: 1, delay:0.55});
           ScrollTrigger.create({
             trigger: scaleItemIn,
             animation: anim,
@@ -71,14 +71,14 @@ const baseItem = gsap.utils.toArray('.from-base');
         
 
 // video fader
-gsap.set(".video_contain", { opacity: 0.5, duration: 1, }); // Set initial opacity to 0
+gsap.set(".video_contain", { opacity: 0.4, duration: 1, }); // Set initial opacity to 0
 
 gsap.to("html", {
   scrollTrigger: { 
     trigger: ".intro",
     toggleActions: "restart none none reverse"
 },
-  "--myBlur": 8,
+  "--myBlur": 14,
   duration: 0.75,
 
 });
@@ -88,7 +88,7 @@ gsap.to (".video_contain", {
     trigger: ".intro",
     toggleActions: "restart none none reverse"
 },
-  opacity:0.3,
+  opacity:0.2,
   duration: 1.25,
   
 });    
@@ -219,14 +219,12 @@ const dispose = (scroll) => {
 } 
 dispose(0)
 
-
 /*--------------------
 Wheel
 --------------------*/
 const handleMouseWheel = (e) => {
   scrollY -= e.deltaY * 0.9
 }
-
 
 /*--------------------
 Touch
@@ -250,7 +248,6 @@ const handleTouchEnd = () => {
   $menu.classList.remove('is-dragging')
 }
 
-
 /*--------------------
 Listeners
 --------------------*/
@@ -266,7 +263,6 @@ $menu.addEventListener('mouseleave', handleTouchEnd)
 $menu.addEventListener('mouseup', handleTouchEnd)
 
 $menu.addEventListener('selectstart', () => { return false })
-
 
 /*--------------------
 Resize
@@ -296,3 +292,81 @@ const render = () => {
   })
 }
 render()
+
+
+gsap.set(".ball", {xPercent: -50, yPercent: -50});
+
+var ball = document.querySelector(".ball");
+var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+var mouse = { x: pos.x, y: pos.y };
+var speed = 0.1;
+
+var fpms = 60 / 1000;
+
+var xSet = gsap.quickSetter(ball, "x", "px");
+var ySet = gsap.quickSetter(ball, "y", "px");
+
+window.addEventListener("mousemove", e => {    
+  mouse.x = e.x;
+  mouse.y = e.y;  
+});
+
+gsap.ticker.add((time, deltaTime) => {
+  
+  var delta = deltaTime * fpms;
+  var dt = 1.0 - Math.pow(1.0 - speed, delta); 
+  
+  pos.x += (mouse.x - pos.x) * dt;
+  pos.y += (mouse.y - pos.y) * dt;
+  xSet(pos.x);
+  ySet(pos.y);
+});
+
+// showreel controller
+
+var vid = document.getElementById("showreel-vid"); 
+
+function playVid() { 
+vid.play(); 
+} 
+
+function pauseVid() { 
+vid.pause(); 
+}
+
+
+// Get the modal ---------------
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  gsap.set("#myModal", { opacity: 0, duration: 0, }); // Set initial opacity to 0
+  modal.style.display = "block";
+  gsap.to ("#myModal", {  opacity:1, duration: 0.5,});  
+  playVid();
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  gsap.to ("#myModal", {  opacity:0, duration: 0.5,  onComplete: () => {
+  modal.style.display = "none";
+  pauseVid();
+  }});  
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+  gsap.to ("#myModal", {  opacity:0, duration: 0.5,  onComplete: () => {
+  modal.style.display = "none";
+  pauseVid();
+  }});  
+  }
+}
+
