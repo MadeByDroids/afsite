@@ -50,7 +50,7 @@ p.cite, cite {text-align:center; width:100%; margin:0 auto;}
 .highlight {color: #f0ff3d;}
 #af-logo {width:48px; height:56px; background-color: transparent; display:block; position:fixed; top:24px; left:24px;text-align: center; margin:0 auto}
 .logo img { padding:0px; margin:0px; width:100%;}
-.btncontainer {position: absolute; top:16px; right:16px;}
+.btncontainer {position: absolute; top:16px; left:0; right:0}
 .button {height:48px; line-height:48px; border:0px solid; background-color:#f0ff3d; transition: all 0.75s ease; color:#000; text-transform: uppercase;  border-radius: 8px; letter-spacing: 2px; font-size:14px; padding:0 16px 0 16px; margin:0 0 0 0; }
 .video-background {width:10vw; height:100vh;}
 /*img {width:100%;}*/
@@ -61,7 +61,7 @@ a {color: #f0ff3d; text-decoration:none;}
 a:hover {color:#f4f4ed}
 #downlord {width:76px; float:right;}
 .subhead, .typer { color: #f0ff3d; text-transform: none;}
-.typer {font-size:2.5rem; }
+.typer {font-size:2rem; margin-bottom:0.5rem;}
 .designer {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
@@ -265,18 +265,13 @@ animation: pulse 2s infinite;}
 .smallt {font-size:12px; line-height: 1.4;}
 .footer {text-align: center;   }
 .footer p {text-align: center; font-size:20px; margin-bottom:0px; color:#333}
-.footer h2 {font-size:3rem; line-height: 1.3;}
+.footer h2 {font-size:2.5rem; line-height: 1.3;}
 .footer a {transition: all 0.75s ease;}
 .footer a:hover {color:#f4f4ed; text-shadow: 0 0 50px;}
 .padtop {padding-top: 20vh;}
 .grid-container img {width:100%;}
 ul.tools  {margin:0 0 4rem 0; padding:0 0 0 0;}
-.tools li { list-style-type: none;
-  text-align: left;
-  padding:0.5rem;
-margin:0 0 0.5rem 0;
-line-height: 1.1;
-}
+.tools li { list-style-type: none; text-align: left;padding:0.5rem;margin:0 0 0.5rem 0;line-height: 1.1;}
 
 /* horizontal scroller */
 
@@ -329,7 +324,7 @@ h2 { font-size: 7rem; }
 
 #contactcontainer {
     height:50px; 
-    width:400px;
+    width:100%;
     margin:auto;
     text-align: center;
   }
@@ -372,6 +367,7 @@ h2 { font-size: 7rem; }
   .video-cover-x img {width: 50%;}
   .splashvid .video-header .viewport-header .vtext {width: 100vw; padding:0 0vw;}
 .grid-container {padding:16px;}
+.btncontainer {position: absolute; top:16px; left:auto; right:16px}
 }
 
 
