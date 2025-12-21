@@ -60,18 +60,8 @@ p, ul li {font-weight:400; text-align: left; font-size:2rem; -webkit-font-smooth
 a {color: #f0ff3d; text-decoration:none;}
 a:hover {color:#f4f4ed}
 #downlord {width:76px; float:right;}
-.subhead, .typer { color: #f0ff3d; text-transform: none;}
-.typer {font-size:2rem; margin-bottom:0.5rem;}
-.designer {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  text-transform:capitalize;
-  letter-spacing: normal;
-  font-style: normal;
-  text-align: center;
-  color: #f4f4ed;
-  padding-right:12px;
-}
+.subhead, .typer { text-transform: none;}
+.typer {font-size:2.3rem; margin-bottom:0.5rem; font-family: "Space Grotesk", sans-serif; font-weight: 700;}
 
 h1, h2, h3, h4 { 
   font-family: "Space Grotesk", sans-serif;
@@ -91,7 +81,19 @@ h1, h2, h3, h4 {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-h3.intro {display:block;}
+
+.designer, h2 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  text-transform:capitalize;
+  letter-spacing: normal;
+  font-style: normal;
+  text-align: center;
+  font-weight: 200;
+  padding-right:12px;
+color:#f4f4ed;}
+
+h3.intro {display:block; text-align: center; font-size:6rem}
 h4 {padding:0 0px; font-size: 2.4rem; margin-top:6rem}
 input[type="checkbox"] {
 padding:10px;
@@ -265,7 +267,7 @@ animation: pulse 2s infinite;}
 .smallt {font-size:12px; line-height: 1.4;}
 .footer {text-align: center;   }
 .footer p {text-align: center; font-size:20px; margin-bottom:0px; color:#333}
-.footer h2 {font-size:2.5rem; line-height: 1.3;}
+.footer h2 {font-size:2.5rem; line-height: 1.3;   font-family: "Space Grotesk", sans-serif; font-weight: 700;text-transform: lowercase;}
 .footer a {transition: all 0.75s ease;}
 .footer a:hover {color:#f4f4ed; text-shadow: 0 0 50px;}
 .padtop {padding-top: 20vh;}
@@ -349,7 +351,7 @@ h2 { font-size: 7rem; }
 
 
 
-
+#portrait {width:128px; margin: 0 auto; border-radius: 50%;}
 
 
 
@@ -373,7 +375,7 @@ h2 { font-size: 7rem; }
 
 /* Larger than phablet */
 @media (min-width: 900px) {
-  .introtext {margin-top:20vh;}
+  .introtext {margin-top:0vh;}
   .big {font-size:6rem !important}
   .dt {display: block;}
 .mob {display:none}
@@ -384,13 +386,16 @@ h2 { font-size: 7rem; }
     h4 { font-size: 2.4rem; }
     h5 { font-size: 2.4rem; }
     h6 { font-size: 1.5rem; }
+
+    h3.intro { font-size:9rem}
+
     .grid-container {padding:48px;}
     .logo img { padding:0px; margin:0px;}
     .btncontainer {position: absolute; top:24px; right:32px;}
-#portrait {width:80%;}
+
  .splashvid .video-header .viewport-header .vtext h1 {padding:0 24px;  color:#f0ff3d;}
 
- .down {position:absolute; bottom:20px; left:48%; right:50%; width:76px; height:76px; margin:0 auto; display: block; opacity:1; padding:16px; transform: scale(1);}
+ .down {position:relative; top:15px; left:-5px; right:0; width:96px; height:96px; margin:0 auto; display: block; opacity:1; transform: scale(1);}
 
     .panel {
        height: 90%;
@@ -422,11 +427,14 @@ h2 { font-size: 7rem; }
   .big {font-size:9rem !important}
 
     h1 { font-size: 12.0rem; }
-    h2 { font-size: 20rem; margin-bottom:-12rem }
+    h2 { font-size: 8rem; margin-bottom:0 }
     h3 { font-size: 3.6rem; }
     h4 { font-size: 2.4rem;}
     h5 { font-size: 2.4rem; }
     h6 { font-size: 1.5rem; }
+
+        h3.intro { font-size:12rem}
+
 
     .splashvid .video-header .viewport-header .vtext {
       width: 100vw;
