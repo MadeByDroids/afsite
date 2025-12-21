@@ -5,11 +5,12 @@
     <meta name="description" content="Website of Creative Senior Designer Andrew Fiddy">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/barebones.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css"> 
+  <link rel="stylesheet" href="css/barebones.css">
+<link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -39,20 +40,20 @@
           <h1 class="mob">Andrew<br>Fiddy</h1>
           <h2 class="typer"><span id="element"></span></h2>
           <p class="typer designer">Designer</p>
-          <a class="down scroll pulse" href="#aftop"><img src="img/down.svg" class="glitch" alt="scroll down" id="top"></a> 
+          <a class="down scroll pulse" href="#aftop"><img src="img/down.svg" class="glitch" alt="scroll down" id="top"></a>
           </div>
         </div>
       </div>
     </div>
 
 <div class="section" id="aftop">
-    <div class="grid-container halves from-right">
-      <div class=""><h3 class="intro fadeIn scaleIn">Hello, I'm Andy,<br> a versatile & highly skilled Designer.</h3>
-        <p class="fadeIn scaleIn">Leader, Creator, Coder, Innovator, I have over 20 years industry experience designing at the highest level for numerous products. Most recently this has included the XR realm, utilising creative technology for VR, AR, AI, games and mixed reality. 
-        Currently I am Head of Design @ <a href="http://www.infiniteform.io" target="_blank">InfiniteForm</a> in Norwich UK</p></div>
-      <div class="from-base introtext"><img src="img/af-y.jpg"  class='glitch2 round' id="portrait" alt="af"></div> 
+    <div class="grid-container">
+            <div class="from-base introtext"><img src="img/af-y.jpg"  class='glitch2 round' id="portrait" alt="af"></div> 
+
+      <div class=""><h3 class="intro fadeIn scaleIn">Hello, I'm Andy,<br> a versatile & highly skilled Senior Designer.</h3>
     </div>
   </div>
+</div>
 
 
 <div class="section showreel dt">
@@ -68,6 +69,13 @@
     </div>
   </div>
 
+   <!-- <div class="section foliocs dt">
+  <div class="grid-container">
+   <h2 class="subhead  fadeIn scaleIn">Case Studies</h2>
+
+    </div>
+  </div>!-->
+
 <div id="myModal" class="modal dt">
   <div class="modal-content">
   <span class="close"> 
@@ -80,6 +88,7 @@
   
 <div class="section" id="clients">
     <div class="grid-container fadeIn scaleIn ">
+         <h2 class="subhead  fadeIn scaleIn">Clients</h2>
       <h3 class="subhead center">The many brands I have collaborated with include:</h2>
       </div>
       <div id="scrollcontainer">
@@ -242,16 +251,17 @@
 
 <div class="section" id="skills">
   <div class="grid-container fadeIn scaleIn ">
-      <h3 class="subhead fadeIn scaleIn center">At heart I'm a creative, technologist, planner, maker, gamer… focused on delivering world class products..</h2>
+          <h2 class="subhead fadeIn scaleIn">About Me</h2>
+      <h3 class="subhead fadeIn scaleIn center">At heart I'm a creative, technologist, planner, maker, gamer…<br>focused on delivering world class products..</h2>
   </div>
   <div class="grid-container halves">
     <div class="fadeIn scaleIn">
       <h4 class="left">What I can offer</h4>
       <ul class="tools">
-        <li class="fadeIn scaleIn ">Brand, design & product expertise.</li>
+        <li class="fadeIn scaleIn ">Design & product expertise.</li>
         <li class="fadeIn scaleIn ">Team and mentor development.</li>
         <li class="fadeIn scaleIn ">Creative leadership at all levels.</li>
-        <li class="fadeIn scaleIn ">Fully conversant in responsive web and design systems.</li>
+        <li class="fadeIn scaleIn ">Fully conversant in resposive web and design systems.</li>
         <li class="fadeIn scaleIn ">Experience of the 3D production pipeline & techniques.</li>
         <li class="fadeIn scaleIn ">Immersive experience with AR, VR, Ai, XR.</li>
       </ul>
@@ -262,10 +272,9 @@
       <ul class="tools">
         <li class="fadeIn scaleIn ">Hand drawn sketching, prototyping & wireframing.</li>
         <li class="fadeIn scaleIn ">Figma UX / UI / Interactions.</li>
-        <li class="fadeIn scaleIn ">Full Adobe Creative Suite.</li>
-        <li class="fadeIn scaleIn ">Motion graphics & animation.</li>
-        <li class="fadeIn scaleIn ">HTML, CSS & Javascript code libraries.</li>
-		<li class="fadeIn scaleIn ">A.i. based system integration.</li>
+        <li class="fadeIn scaleIn ">The full Adobe Creative Suite.</li>
+        <li class="fadeIn scaleIn ">After Effects & Premiere / Motion graphics & animation.</li>
+        <li class="fadeIn scaleIn ">HTML, CSS & Javascript libraries.</li>
       </ul></div>
 
     </div>
@@ -305,9 +314,9 @@
 
 if (window.matchMedia("(min-width: 768px)").matches) {
     document.getElementById("viddesktop").innerHTML = `
-         <video id="showreel-vid" class="fadeIn scaleIn myShowreel" controls autoplay loop>
-          <source src="img/vim1080-2.mp4" type="video/mp4">
-          <source src="img/vim1080-2.webm" type="video/webm">
+         <video id="showreel-vid" class="fadeIn scaleIn myShowreel" controls autoplay loop muted>
+          <source src="img/vim1080_1.mp4" type="video/mp4">
+          <source src="img/vim1080_1.webm" type="video/webm">
         </video>
     `;
 }
