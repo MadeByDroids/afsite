@@ -83,13 +83,13 @@ h1, h2, h3, h4 {
 }
 
 .designer, h2 {
-  font-family: "Bodoni Moda", serif;
+    font-family: "Unna", serif;
   font-optical-sizing: auto;
   text-transform:capitalize;
   letter-spacing: normal;
   font-style: normal;
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   padding-right:12px;
 color:#f4f4ed;}
 
