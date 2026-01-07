@@ -68,7 +68,7 @@ html {
 	--base-font-size: 62.5%;
 	
 	/* Grid Defaults - default to match orig skeleton settings */
-	--grid-max-width: 1800px;
+	--grid-max-width: 1400px;
 }
 
 /*  Dark Theme
@@ -406,7 +406,7 @@ there.
 }
 
 /* Larger than tablet */
-@media (min-width: 1800px) {}
+@media (min-width: 1400px) {}
 
 
 
